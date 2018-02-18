@@ -21,8 +21,8 @@ button.onclick = function() {
     request.open('GET','http://nikhilkamat2.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-//submit name
 var nameInput = document.getElementById("name");
+//submit name
 submit.onclick = function () {
   //make a request to the server and send the name
   var request = new XMLHttpRequest();
@@ -44,8 +44,9 @@ submit.onclick = function () {
     }  
     // Not done yet
   };
+    var nameInput = document.getElementById("name");
     var name = nameInput.value;
-    var submit = document.getElementById("submit_btn");
+
     // Make the Request 
     request.open('GET','http://nikhilkamat2.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
