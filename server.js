@@ -34,7 +34,7 @@ function createTemplate (data) {
     var date = data.date;
     var content = data.content;
     
-    console.log(title);
+    console.log($(title));
     var htmlTemplate= `
     <html>
         <head>
