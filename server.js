@@ -9,8 +9,7 @@ var articleOne = {
     title: 'Article One | Nikhil Kamat',
     heading: 'Article One',
     date: 'Feb 18,2018',
-    content:`
-            <p>
+    content:`<p>
                 This is the content for my article. This is the content for my article. This is the content for my article.
                 This is the content for my article. This is the content for my article. This is the content for my article.
                 This is the content for my article. This is the content for my article. This is the content for my article.
@@ -34,7 +33,6 @@ function createTemplate (data) {
     var date = data.date;
     var content = data.content;
     
-    console.log(title);
     var htmlTemplate= `
     <html>
         <head>
@@ -44,7 +42,7 @@ function createTemplate (data) {
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="/ui/style.css" rel="stylesheet">
         </head>
-        <body>
+    k    <body>
             <div class="container">
                 <div>
                     <a href='\'>Home</a>
@@ -62,6 +60,7 @@ function createTemplate (data) {
             </div>
         </body>
     </html>`;
+    return htmlTemplate; 
 }
 
 app.get('/', function (req, res) {
